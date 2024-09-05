@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Kesehatan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Kalkulator Kesehatan</h1>
+        <form id="healthForm">
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" required><br><br>
+
+            <label for="tinggi">Tinggi Badan (cm):</label>
+            <input type="number" id="tinggi" required><br><br>
+
+            <label for="berat">Berat Badan (kg):</label>
+            <input type="number" id="berat" required><br><br>
+
+            <label for="usia">Usia:</label>
+            <input type="number" id="usia" required><br><br>
+
+            <label for="gender">Jenis Kelamin:</label>
+            <select id="gender">
+                <option value="L">Laki-laki</option>
+                <option value="P">Perempuan</option>
+            </select><br><br>
+
+            <button type="button" onclick="hitungKesehatan()">Hitung</button>
+        </form>
+
+        <div id="result">
+            <!-- Hasil perhitungan akan ditampilkan di sini -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
